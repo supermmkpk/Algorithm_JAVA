@@ -43,12 +43,13 @@ public class BJ_2444_별찍기7_박봉균 {
 			for(int j = space; j > 0; j--) { //공백 수 만큼 공백을 출력합니다.
 				System.out.print(" ");
 			}
-			for(int j = 0; j < i; j++) { 
-				System.out.print("*"); //별을 연달아 출력합니다.
+			for(int j = 0; j < i; j++) { //별을 연달아 출력합니다.
+				System.out.print("*"); 
 			}
 			System.out.println(); //개행
 			space--; //분기점까지는 앞의 공백이 감소합니다.
 		}
+		
 		space = 1; //분기점(2n-1)이후에서의 공백 수로 1로 초기화합니다.
 		//분기점 이후 2n-3부터 홀수개의 별을 출력합니다.(감소)
 		for(int i = 2 * n - 3; i > 0; i -= 2) {
