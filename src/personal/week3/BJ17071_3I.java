@@ -6,8 +6,6 @@ import java.util.*;
 
 public class BJ17071_3I {
 	
-	
-	
 	public static void main(String[] args) throws IOException {
 		final int MAX = 500000;
 		int[][] visited = new int[2][MAX + 4];
