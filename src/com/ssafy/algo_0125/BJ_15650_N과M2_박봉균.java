@@ -21,7 +21,7 @@ import java.io.*;
 [출력]
 한 줄에 하나씩 수열을 출력 (중복X, 각 수열은 공백으로 구분해서 출력, 사전 순)
  */
-public class BJ_15650_N과M2_박봉균2 {
+public class BJ_15650_N과M2_박봉균 {
 	static int N, M;
 	static boolean[] visited = new boolean[10]; //중복되는지 체크하는 배열
 	
@@ -75,3 +75,4 @@ public class BJ_15650_N과M2_박봉균2 {
 		combi(list);
 	}
 }
+
