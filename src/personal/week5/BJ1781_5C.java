@@ -56,9 +56,9 @@ public class BJ1781_5C {
 		//PriorityQueue의 size와 데드라인 비교, 갱신(size보다 데드라인이 더 크면 최소 빼 버리기)
 		ret = 0;
 		for(Pair pair : list) {
-			ret += pair.getSecond();
-			pq.add(pair.getSecond());
-			if(pq.size() > pair.getFirst()) {
+			ret += pair.second;
+			pq.add(pair.second);
+			if(pq.size() > pair.first) {
 				ret -= pq.peek();
 				pq.remove();
 			}
@@ -76,32 +76,19 @@ public class BJ1781_5C {
  * Pair 클래스
  */
 class Pair implements Comparable<Pair> {
-	private int first;
-	private int second;
+	int first;
+	int second;
 	
 	Pair(int first, int second) {
 		this.first = first;
 		this.second = second;
 	}
-	public int getFirst() {
-		return first;
-	}
-	public int getSecond() {
-		return second;
-	}
+
 	@Override
 	public int compareTo(Pair p) {
-		if(this.first < p.first)
-			return -1;
-		else if(this.first == p.first) {
-			if(this.second < p.second)
-				return -1;
-			else if(this.second == p.second)
-				return 0;
-			else
-				return 1;
-		}
+		if(this.first == p.first) 
+			return Integer.compare(this.second, p.second);
 		else
-			return 1;
+			return Integer.compare(this.first, p.first);
 	}
 }
