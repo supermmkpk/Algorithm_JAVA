@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author bongkyoonpark
- *
- */
-module algorithm {
-}
