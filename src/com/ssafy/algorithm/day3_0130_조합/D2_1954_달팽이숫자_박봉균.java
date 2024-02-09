@@ -23,7 +23,7 @@ T개 줄) N. (1 ≤ N ≤ 10)
 각 테케) #테케번호(1부터) <개행>
   		달팽이 행렬 출력
 */
-public class D2_1954_달팽이숫자_박봉균 {
+public class D2_1954_달팽이숫자_박봉균 {
 	/** 방향벡터(오른->아래->왼->위) */
 	public static final int[] dy = {0, 1, 0, -1};
 	public static final int[] dx = {1, 0, -1, 0};

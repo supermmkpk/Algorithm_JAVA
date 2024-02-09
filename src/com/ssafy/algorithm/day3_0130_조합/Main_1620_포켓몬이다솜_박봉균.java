@@ -15,7 +15,7 @@ M개 줄) 알파벳 or 숫자(1~N)
 [출력]
 M개의 줄)답. (숫자 : 이름을, 문자: 번호)
  */
-public class Main_1620_포켓몬이다솜_박봉균 {
+public class Main_1620_포켓몬이다솜_박봉균 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package personal.week4;
+package personal.week4_비트마스킹;
 
 import java.util.*;
 import java.io.*;

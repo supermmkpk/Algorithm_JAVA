@@ -1,4 +1,4 @@
-package personal.week6;
+package personal.week6_이분탐색_LIS;
 import java.util.*;
 import java.io.*;
 

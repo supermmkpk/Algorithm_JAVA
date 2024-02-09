@@ -13,7 +13,7 @@ import java.io.*;
  * 
  * 결과: 41412KB, 392ms
  */
-public class Main_15649_N과M1_박봉균 {
+public class Main_15649_N과M1_박봉균 {
 	/** 전체 숫자 개수 N */
 	static int N;
 	/** 수열의 크기 M */

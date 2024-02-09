@@ -1,4 +1,4 @@
-package personal.week5;
+package personal.week5_그리디_투포인터;
 import java.util.*;
 import java.io.*;
 

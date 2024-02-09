@@ -24,7 +24,7 @@ M개 줄) 구간 i와 j (1 ≤ i ≤ j ≤ N)
 [출력]
 M개 줄) i ~ j 구간합. 
  */
-public class Main_11659_구간합구하기4_박봉균 {
+public class Main_11659_구간합구하기4_박봉균 {
 	/** 누적합 (인덱스: 1 ~ N) */
 	static int[] preSum;
 	/** 수의 개수  N, 합 구하는 횟수 M */

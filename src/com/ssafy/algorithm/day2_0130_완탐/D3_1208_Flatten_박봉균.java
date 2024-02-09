@@ -25,7 +25,7 @@ import java.io.*;
 #테케번호 <공백> 최고최저높이차 
 (덤프 횟수 이내에 평탄화 완료 : 0 or 1)
  */
-public class D3_1208_Flatten_박봉균 {
+public class D3_1208_Flatten_박봉균 {
 	/** 덤프 가능 횟수 */
 	static int N;
 	/** 가로 위치(인덱스)별 높이 저장 배열  */

@@ -20,7 +20,7 @@ import java.io.*;
 [출력]
 한 줄에 하나씩 수열을 출력 (중복X, 각 수열은 공백으로 구분해서 출력, 사전 순)
  */
-public class Main_15650_N과M2_박봉균 {
+public class Main_15650_N과M2_박봉균 {
 	/** 자연수 개수 N, 수열 크기 M */
 	static int N, M;
 	/** 중복되는지 체크하는 배열 */

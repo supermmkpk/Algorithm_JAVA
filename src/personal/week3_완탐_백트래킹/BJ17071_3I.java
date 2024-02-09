@@ -1,4 +1,4 @@
-package personal.week3;
+package personal.week3_완탐_백트래킹;
 
 import java.io.*;
 import java.util.*;
