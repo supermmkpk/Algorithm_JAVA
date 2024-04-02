@@ -5,7 +5,8 @@ import java.util.Stack;
 public class StackAPITest {
 	
 	public static void main(String[] args) {
-		Stack<String> stk = new Stack<>();
+		//Stack<String> stk = new Stack<>();
+		Stack<String> stk = new ArrayDeque<>();
 		stk.push("대전 : 갓병찬");
 		stk.push("서울 : 자바의신 전은수");
 		stk.push("서울 : 김동근");

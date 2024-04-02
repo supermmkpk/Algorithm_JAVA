@@ -27,6 +27,7 @@ public class Main_15649_N과M1_박봉균 {
 	/**
 	 * 1~N 자연수 중 중복 없이 M개를 고른 수열을 구하는 함수
 	 */
+	/*
 	static void choose() {
 		//종료조건! : 수열의 크기가 M이라면 출력후 종료.
 		if(list.size() == M) {
@@ -45,6 +46,27 @@ public class Main_15649_N과M1_박봉균 {
 			//원상복구
 			visited[i] = false;
 			list.removeLast();
+		}
+	}
+	*/
+
+	/**
+	 * 1~N 자연수 중 중복 없이 M개를 고른 수열을 구하는 함수
+	 */
+	static int[] numbers = new int[M];
+	static void permu(int cnt, int visited) {
+		if(cnt == M) {
+			for(int i : numbers) 
+				sb.append(i + " ");
+			sb.append('\n');
+			return;
+		}
+
+		for(int i = 1; i <= N; i++) {
+			if((1 << i & visited) != 0)
+				continue;
+			numbers[cnt] = i;
+			permu(cnt + 1, visited | 1 << i);
 		}
 	}
 

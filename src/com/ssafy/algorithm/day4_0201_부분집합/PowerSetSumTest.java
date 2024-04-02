@@ -18,7 +18,8 @@ public class PowerSetSumTest {
 		for(int i = 0; i < N; i++) 
 			input[i] = sc.nextInt();
 		
-		generateSubset(0);
+		//generateSubset(0);
+		powerSet();
 	}
 	
 	/**
@@ -39,6 +40,21 @@ public class PowerSetSumTest {
 			generateSubset(cnt + 1); //포함한 상태에서 다음 녀석
 			visited[cnt] = false; //포함 안 하기!
 			generateSubset(cnt + 1); //포함 안한 상태에서 다음 녀석
+		}
+	}
+
+	static void powerSet() {
+		for(int i = 0; i < (1 << N); i++) {
+			//현재 조합에 대하여
+			for(int j = 0; j < N; j++) {
+				if((1 << j & i) != 0) {
+					System.out.println(input[i] + "\t");
+				}
+				else {
+					System.out.println("X\t");
+				}
+			}
+			System.out.println();
 		}
 	}
 	

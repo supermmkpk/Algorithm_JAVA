@@ -25,6 +25,21 @@ public class Main_15650_N과M2_박봉균 {
 	static int N, M;
 	/** 중복되는지 체크하는 배열 */
 	static boolean[] visited = new boolean[10]; 
+
+	static int[] numbers = new int[M];
+	static void combi(int cnt, int start) {
+		if(cnt == N) {
+			for(int i : numbers)
+				sb.append(i + " ");
+			sb.append('\n');
+			return;
+		}
+
+		for(int i = start; i <= N; i++) {
+			numbers[cnt] = i;
+			combi(cnt + 1, start + 1);
+		}
+	}
 	
 	/**
 	 * 1~N 중 중복 없이 M개를 골라 출력합니다.

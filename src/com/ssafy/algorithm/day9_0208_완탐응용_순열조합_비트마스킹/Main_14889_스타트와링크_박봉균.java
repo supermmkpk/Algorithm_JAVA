@@ -38,7 +38,7 @@ public class Main_14889_스타트와링크_박봉균 {
 		br.close();
 	}
 	
-	//C(N , N/2) - 비트마스킹
+	//C(N , N/2) - 재귀+비트마스킹
 	static void combi(int cnt, int start, int visited) {
 		//종료조건
 		if(cnt == N/2) {

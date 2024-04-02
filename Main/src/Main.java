@@ -1,28 +1,9 @@
-package com.ssafy.algorithm.day10_Greedy;
 import java.io.*;
 import java.util.*;
 
-/**
- * <pre>
- * BJ1931 [S1] : 회의실 배정
- * </pre>
- * @author 박봉균
- * @since JDK1.8
- * 
- * 아이디어: 종료시간 기준 오름차순
- * 결과: 42604KB, 472ms
- */
-
-/* <문제 요약>
- * 한 개의 회의실을 N개 회의에 사용하려 한다. 
- * 각 회의가 겹치지 않게 하면서 회의실을 사용할 수 있는 회의의 최대 개수를 찾아보자. (회의의 시작시간과 끝나는 시간이 같을 수도 있다)
-[입력]
-1) 회의의 수 N(1 ≤ N ≤ 1e5)
-N개 줄) 회의의 시작시간, 종료시간. (0 <= 시간 <= 2^31 - 1)
-[출력]
-회의의 최대 개수.
- */
-public class Main_1931_회의실배정_박봉균 {
+//N개의 원소를 입력 받아 가능한 모든 부분집합 생성
+//1 <= N <= 10
+public class Main {
 	/** 회의 개수 N */
 	static int N;
 	/** 회의 정보 저장 PQ */
@@ -49,11 +30,11 @@ public class Main_1931_회의실배정_박봉균 {
 		int cnt = 1;
 		int prev = pq.remove().end; //이전 종료시간
 		while(!pq.isEmpty()) {
-			if(pq.peek().start < prev) //이전 종료 시간 이전: remove
+			if(prev > pq.peek().start) //이전 종료 시간 이전: remove
 				pq.remove();
 			else { //이전 종료 시간 이후: 카운트 증가
 				prev = pq.remove().end;
-				++cnt;
+				cnt++;
 			}
 		}
 		
@@ -73,11 +54,11 @@ public class Main_1931_회의실배정_박봉균 {
 		}
 		/** 정렬 규칙: 종료시간 기준 오름차순, 같을 경우 시작시간 기준 오름차순 */
 		@Override
-		public int compareTo(Meeting m) {
-			if(this.end == m.end)
-				return this.start - m.start;
+		public int compareTo(Meeting o) {
+			if(this.end == o.end)
+				return	Integer.compare(this.start, o.start);
 			else
-				return this.end - m.end;
+				return Integer.compare(this.end, o.end);
 		}
 	}
 }
