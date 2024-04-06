@@ -1,4 +1,3 @@
-package day1_DP3_Knapsack;
 
 import java.io.*;
 import java.util.*;
