@@ -67,7 +67,7 @@ public class Main_3109_빵집_박봉균 {
 			if(matrix[ny][nx] == '.' && visited[ny][nx] == false) 
 				dfs(ny, nx);
 			
-			if(flag) //끝 지점에서 flag true 후 return했으므로 다른 방향 탐색 불필요(시작점으로 계속 return)
+			if(flag) //끝 지점에서 flag true 후 return했으므로 다른 방향 탐색 불필요: 유망하지 않음(시작점으로 연쇄 복귀)
 				break;
 		}
 	}

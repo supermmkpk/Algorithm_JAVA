@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.day13_0216_그래프2;
+package com.ssafy.algorithm.day13_0216_그래프2_BFS;
 import java.util.*;
 import java.io.*;
 

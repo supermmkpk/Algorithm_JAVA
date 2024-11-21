@@ -78,7 +78,7 @@ public class Main_15649_N과M1_박봉균 {
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		
-		choose(); //수열 구하기
+		permu(0, 0); //수열 구하기
 		
 		System.out.println(sb.toString()); //출력
 		br.close(); //stream을 닫습니다.
